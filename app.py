@@ -51,6 +51,10 @@ with open('models/lyrics_matrix.pkl', 'rb') as f:
 with open('models/recommender.pkl', 'rb') as f:
     recommender = pickle.load(f)
 
+st.set_page_config(page_title="Lyrics Analysis and Music Recommendation with Pair Similarities",
+                   page_icon=":musical_note:",
+                   layout="wide")
+
 st.title('Lyrics Analysis and Music Recommendation with Pair Similarities')
 st.write('Enter text and number of songs to get recommendations.')
 
